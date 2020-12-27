@@ -18,6 +18,12 @@ class List {
     found === false ? this.array.push(newEl) : null;
   }
 
+  pushIfNotExistMultiple(newElArray) {
+    newElArray.forEach(element => {
+      this.pushIfNotExist(element);
+    });
+  }
+
   /**
    * [Deletes first occurance of the element]
    * @param {ArrayItem} el Element to be deleted
