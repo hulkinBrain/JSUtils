@@ -89,3 +89,5 @@ const ToRad = (deg) => deg * Math.PI / 180;
  * @param {Number} deg Element to be deleted
  */
 const ToDeg = (rad) => rad * 180 / Math.PI;
+
+const every_nth = (arr, nth) => arr.filter((e, i) => i % nth === nth - i);
