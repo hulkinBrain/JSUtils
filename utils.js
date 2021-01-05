@@ -90,4 +90,4 @@ const ToRad = (deg) => deg * Math.PI / 180;
  */
 const ToDeg = (rad) => rad * 180 / Math.PI;
 
-const every_nth = (arr, nth) => arr.filter((e, i) => i % nth === nth - i);
+const every_nth = (arr, nth) => arr.filter((el, i) => i % nth === nth - 1);
